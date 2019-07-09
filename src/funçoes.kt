@@ -5,10 +5,10 @@ fun exibirMensagem (nome: String) {
     println ("você tem que comprar ração, $nome.")
 }
 //primeira forma de retornar, já completando o print na própria função
-fun somarNumeros (numero1: Int, numero2: Int): Int {
+//não retorna porque não armazena em variavel
+fun somarNumeros (numero1: Int, numero2: Int) {
     val totalNumeros = numero1 + numero2
     println("O resultado de sua soma é $totalNumeros.")
-    return totalNumeros
 
 }
 
