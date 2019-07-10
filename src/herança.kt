@@ -12,9 +12,9 @@ open class Medico(var nome: String) {
     }
 }
 
-class Dermatologista: Medico("") {}
+class Dermatologista(nome: String): Medico(nome) {}
 
-class Psiquiatra: Medico("") {
+class Psiquiatra(nome: String): Medico(nome) {
     override fun residencia(){
         super.residencia()
         println("E, também, a residência psiquiatra.")
@@ -22,15 +22,11 @@ class Psiquiatra: Medico("") {
 }
 
 fun main (args: Array<String>) {
-    val jorgeDermato = Dermatologista().also {
+    val jorgeDermato = Dermatologista("Jorge").also {
         it.faculdadeMedicina()
         it.residencia()
     }
 
-    /*
-    val martaPsiq = Psiquiatra() {
+    val martaPsiq = Psiquiatra("Marta")
         martaPsiq.residencia()
-    }
-    
-     */
 }
