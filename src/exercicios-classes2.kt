@@ -1,8 +1,9 @@
 //entendendo o conceito de construtores
 
-class Peixe(var cor: String, var aguaSalgada: Boolean, var idade: Int){
+class Peixe(var cor: String, var aguaSalgada: Boolean, var idade: Int) {
 
     //caso não haja o var ali em cim, é necessário fazer init:
+
     /*
     var nome = ""
     var cor: String = ""
@@ -14,14 +15,14 @@ class Peixe(var cor: String, var aguaSalgada: Boolean, var idade: Int){
     }
     */
 
-    fun nadar(){
+    fun nadar() {
         print("o peixinho está nadando! Sua cor é $cor e ele ")
 
         if (aguaSalgada == true) println("é um peixinho de água salgada!")
         else println("não é um peixinho de água salgada.")
     }
 
-    fun mostrarIdade(){
+    fun mostrarIdade() {
         if (idade < 3) {
             println("dá pro caldo!")
         } else if (idade < 5) {
