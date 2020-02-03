@@ -36,7 +36,7 @@ class Peixe(var cor: String, var aguaSalgada: Boolean, var idade: Int) {
 
 fun main (args: Array<String>) {
 
-    val peixe1 = Peixe("azul", true, 5)
+    val peixe1 = Peixe("azul", true, 2)
     peixe1.nadar()
     peixe1.mostrarIdade()
 }
