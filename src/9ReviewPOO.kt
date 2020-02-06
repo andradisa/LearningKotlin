@@ -20,14 +20,27 @@ class Estudantes{
 
 
         return if (resultadoMedia >= 6){
-            println("O aluno $nome atingiu a nota desejada, obteve média $resultadoMedia.")
+            println("A aluna de $nome, cuja matrícula é $matricula, atingiu a nota desejada, tendo tirado $prova1 na " +
+                    "primeira avaliação, $prova2 na segunda e nota $notaTrabalho no trabalho proposto, " +
+                    "portanto a aluna obteve média $resultadoMedia.")
             0.0
         } else {
-            println("O aluno $nome ficou de prova final, obteve média $resultadoMedia")
+            println("A aluna de $nome, cuja matrícula é $matricula, não atingiu a nota desejada, tendo tirado $prova1 na " +
+                    "primeira avaliação, $prova2 na segunda e nota $notaTrabalho no trabalho proposto, " +
+                    "portanto a aluna obteve média $resultadoMedia, assim sendo necessária aplicação de prova final.")
+
+            final(resultadoMedia)
             resultadoMedia
         }
 
 
+    }
+
+    fun final(resultadoMedia: Double): Double {
+        var notaRequerida = 12 - resultadoMedia
+
+        println("A fim de ser aprovada na disciplina, a aluna $nome deve tirar nota igual ou superior a $notaRequerida.")
+        return notaRequerida
     }
 
 }
