@@ -19,6 +19,15 @@ fun somar (numero1: Int, numero2: Int): Int {
 
 }
 
+fun multiplicar (numero1: Int, numero2: Int): Int {
+
+    var total = numero1 * numero2
+    println(total)
+    return total
+}
+
+
+
 fun main (args: Array<String>) {
 
     exibirMensagem("Meredith")
@@ -29,4 +38,6 @@ fun main (args: Array<String>) {
 
     val resultado = somar(6,7)
     println("O resultado de sua soma é $resultado.")
+
+    val resultadoMultiplicar = multiplicar(2, 3)
 }
